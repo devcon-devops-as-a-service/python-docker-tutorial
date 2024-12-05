@@ -15,7 +15,7 @@ spec:
   source:
     path: sample-python
     repoURL:https://github.com/devcon-devops-as-a-service/python-docker-tutorial.git
-    targetRevision: master
+    targetRevision: main
   sources: []
   project: default
   syncPolicy:
