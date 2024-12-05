@@ -1,0 +1,20 @@
+name: Release New Version
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: write # This is required for actions/checkout
+
+jobs:
+  preperation:
+    uses: devcon-devops-as-a-service/actions/.github/workflows/mainworkflow.yml@main
+    secrets: inherit
+    with:
+      stack: python
+      securityscan: true
+      appName: python-sample
