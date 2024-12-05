@@ -14,7 +14,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: sample-python
-    repoURL:https://github.com/devcon-devops-as-a-service/python-docker-tutorial.git
+    repoURL: https://github.com/devcon-devops-as-a-service/python-docker-tutorial.git
     targetRevision: main
   sources: []
   project: default
