@@ -2,7 +2,7 @@
 
 Learn how use Docker for Python development.
 
-Accompanying repo to my talks at the Docker Community All Hands:1
+Accompanying repo to my talks at the Docker Community All Hands:2
 
 ## How to containerize Python applications with Docker
 
