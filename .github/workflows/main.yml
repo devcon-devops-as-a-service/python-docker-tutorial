@@ -1,0 +1,19 @@
+name: Release New Version
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  id-token: write 
+  contents: write 
+
+jobs:
+  release:
+    uses: devcon-devops-as-a-service/actions/.github/workflows/mainworkflow.yml@main
+    secrets: inherit
+    with:
+      stack: python
+      securityscan: true
+      appName: python-sample
